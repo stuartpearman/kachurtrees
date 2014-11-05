@@ -3,4 +3,35 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+
+
+* {
+	font-family: helvetica;
+	overflow: auto;
+}
+
+h1 {
+	margin: 0;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+section {
+	padding: 0 40px;
+}
+
+.homepage-banner {
+	padding:0;
+	background:  url('http://freebigpictures.com/wp-content/uploads/2009/09/long-trees.jpg');
+	color: #fff;
+	div {
+		background: rgba(0,0,0,0.6);
+		padding: 270px 40px 0 40px;
+	}
+	h1 {
+		font-size: 3em;
+		font-weight: normal;
+	}
+}
