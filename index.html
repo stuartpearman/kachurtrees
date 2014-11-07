@@ -16,6 +16,24 @@
         <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
+        </script>
+        <script type="text/javascript">
+          function initialize() {
+            var mapOptions = {
+              center: { lat: 41.776703, lng: -86.25349},
+              zoom: 13
+
+              
+            };
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -35,9 +53,9 @@
                 <p class="col-md-8">If you are looking for a professional, certified, fully insured, and accredited tree service company look no further! Kachur Tree Service has been serving the community for over 20 years! We are well known for our quality work, quick responses, and reasonable rates. We offer free estimates and 24 hour emergency storm damage service.</p>
             </div>
         </section>
-        <section>
+        <section class='contact'>
             <h2>Contact Us</h2>
-            <div class=""></div>
+            <div id="map-canvas"></div>
             <div></div>
         </section>
         <section>

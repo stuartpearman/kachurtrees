@@ -3,10 +3,10 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+/*@import "compass/reset";*/
 
 * {
 	font-family: helvetica;
-	overflow: auto;
 }
 
 html, body {
@@ -23,23 +23,46 @@ p {
 }
 
 section {
-	padding: 0 40px;
+	display:block;
+	width: 100%;
+	overflow:auto;
+	position:relative;
 }
 
 .homepage-banner {
 	padding:0;
 	background:  url('http://freebigpictures.com/wp-content/uploads/2009/09/long-trees.jpg');
-	color: #fff;
+	color: #333;
 	div {
-		background: rgba(0,0,0,0.6);
-		padding: 270px 40px 0 40px;
+		background: linear-gradient(rgba(255,255,255,0.5),
+			rgba(255,255,255,0.9));
+		padding: 270px 40px 40px 40px;
+		overflow: auto;
 	}
 	h1 {
 		font-size: 3em;
 		font-weight: normal;
 	}
 }
-/*@import "compass/reset";*/
+
+.contact {
+	height: 300px;
+	h2 {
+		position:relative;
+		display: inline-block;
+		z-index: 1;
+		padding:10px 40px;
+		background:rgba(255,255,255,0.8);
+		margin-top: 0;
+	}
+}
+
+#map-canvas {
+	width:100%;
+	height:300px;
+	position: absolute;
+	top:0;
+}
 
 nav {
 	width: 100%;
@@ -50,6 +73,7 @@ nav {
 	position: fixed;
 	top: 0;
 	border-bottom: 5px solid #f3f3f3;
+	z-index: 2;
 
 	#logo {
 		float: left;
@@ -67,6 +91,7 @@ nav {
 		color: black;
 		margin-left: 30px;
 		margin-top: 20px;
+		overflow: visible;
 	}
 
 	a:hover {
