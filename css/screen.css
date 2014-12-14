@@ -35,36 +35,48 @@ section {
 /* line 32, ../sass/screen.scss */
 .homepage-banner {
   padding: 0;
-  background: url("http://freebigpictures.com/wp-content/uploads/2009/09/long-trees.jpg");
-  color: #333;
+  background: url("http://djslawnandyard.ca/wp-content/uploads/2012/12/yard.jpg") fixed;
+  background-size: 100%;
+  color: #fff;
 }
-/* line 36, ../sass/screen.scss */
-.homepage-banner div {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
-  padding: 270px 40px 40px 40px;
+/* line 37, ../sass/screen.scss */
+.homepage-banner .wrapper {
+  padding: 180px 0px 30px 0px;
   overflow: auto;
 }
-/* line 42, ../sass/screen.scss */
-.homepage-banner h1 {
-  font-size: 3em;
-  font-weight: normal;
+/* line 41, ../sass/screen.scss */
+.homepage-banner .content {
+  padding: 100px 40px;
+  text-align: center;
+}
+/* line 44, ../sass/screen.scss */
+.homepage-banner .content h1 {
+  font-size: 4em;
+  letter-spacing: -1px;
+  font-weight: 400;
+  display: block;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
+.about {
+  background: #fff;
+  padding: 40px 55px;
+}
+/* line 56, ../sass/screen.scss */
+.about p {
+  font-weight: 100;
+  display: inline-block;
+  float: none;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+/* line 66, ../sass/screen.scss */
 .contact {
   height: 300px;
 }
-/* line 50, ../sass/screen.scss */
-.contact h2 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  padding: 10px 40px;
-  background: rgba(255, 255, 255, 0.8);
-  margin-top: 0;
-}
 
-/* line 60, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 #map-canvas {
   width: 100%;
   height: 300px;
@@ -72,47 +84,48 @@ section {
   top: 0;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 nav {
   width: 100%;
   margin-top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 60px;
+  background-color: #fff;
   overflow: visible;
-  position: fixed;
+  position: relative;
   top: 0;
-  border-bottom: 5px solid #f3f3f3;
-  z-index: 2;
+  overflow: auto;
+  clear: both;
 }
-/* line 78, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
+nav li {
+  display: inline-block;
+  list-style: none;
+  font-family: helvetica;
+  color: black;
+  margin-left: 30px;
+  margin-top: 0px;
+  overflow: visible;
+  position: relative;
+  bottom: 22px;
+}
+/* line 100, ../sass/screen.scss */
 nav #logo {
   float: left;
   width: 90px;
   margin-left: 5%;
   position: relative;
-  bottom: 22px;
+  top: 25px;
 }
-/* line 87, ../sass/screen.scss */
-nav li {
-  float: left;
-  list-style: none;
-  font-family: helvetica;
-  color: black;
-  margin-left: 30px;
-  margin-top: 20px;
-  overflow: visible;
-}
-/* line 97, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 nav a:hover {
   text-decoration: none;
   color: black;
 }
-/* line 102, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 nav a {
   color: black;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 body {
   background-color: white;
   width: 100%;

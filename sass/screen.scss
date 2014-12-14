@@ -31,30 +31,40 @@ section {
 
 .homepage-banner {
 	padding:0;
-	background:  url('http://freebigpictures.com/wp-content/uploads/2009/09/long-trees.jpg');
-	color: #333;
-	div {
-		background: linear-gradient(rgba(255,255,255,0.5),
-			rgba(255,255,255,0.9));
-		padding: 270px 40px 40px 40px;
+	background:  url('http://djslawnandyard.ca/wp-content/uploads/2012/12/yard.jpg') fixed;
+	background-size: 100%;
+	color: #fff;
+	.wrapper {
+		padding: 180px 0px 30px 0px;
 		overflow: auto;
 	}
-	h1 {
-		font-size: 3em;
-		font-weight: normal;
+	.content {
+		padding: 100px 40px;
+		text-align: center;
+		h1 {
+			font-size: 4em;
+			letter-spacing: -1px;
+			font-weight: 400;
+			display: block;
+		}
 	}
+}
+
+.about {
+	background: #fff;
+	padding: 40px 55px;
+	p {
+			font-weight: 100;
+			display: inline-block;
+			float: none;
+			font-size: 1.2em;
+			line-height: 1.7em;
+	}
+
 }
 
 .contact {
 	height: 300px;
-	h2 {
-		position:relative;
-		display: inline-block;
-		z-index: 1;
-		padding:10px 40px;
-		background:rgba(255,255,255,0.8);
-		margin-top: 0;
-	}
 }
 
 #map-canvas {
@@ -67,31 +77,32 @@ section {
 nav {
 	width: 100%;
 	margin-top: 0;
-	background-color: rgba(255,255,255,.90);
-	height: 60px;
+	background-color: #fff;
 	overflow: visible;
-	position: fixed;
+	position: relative;
 	top: 0;
-	border-bottom: 5px solid #f3f3f3;
-	z-index: 2;
+	overflow:auto;
+	clear: both;
+	
+
+	li {
+		display: inline-block;
+		list-style: none;
+		font-family: helvetica;
+		color: black;
+		margin-left: 30px;
+		margin-top: 0px;
+		overflow: visible;
+		position: relative;
+		bottom: 22px;
+	}
 
 	#logo {
 		float: left;
 		width: 90px;
 		margin-left: 5%;
 		position: relative;
-		bottom: 22px;
-	}
-	
-
-	li {
-		float: left;
-		list-style: none;
-		font-family: helvetica;
-		color: black;
-		margin-left: 30px;
-		margin-top: 20px;
-		overflow: visible;
+		top: 25px;
 	}
 
 	a:hover {
